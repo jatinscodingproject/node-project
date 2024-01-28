@@ -1,0 +1,90 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li, figure, figcaption, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+.heading{
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, button, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#Post_view_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post-box {
+    width: 48%;
+    margin: 0 10px 20px 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.comment-icon {
+    font-size: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+button.save-comment {
+    display: none;
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+button.save-comment:hover {
+    background-color: #27ae60;
+}
