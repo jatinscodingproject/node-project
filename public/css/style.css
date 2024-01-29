@@ -1,90 +1,66 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, h3, p, ul, li, figure, figcaption, div {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #f92dab;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
-.heading{
+
+.container {
     text-align: center;
 }
-.container {
-    max-width: 800px;
-    margin: 20px auto;
+
+.heading {
+    color: #343a40;
+}
+label {
+    color: #343a40;
+    font-weight: bolder;
+}
+
+#posting {
+    background-color: #ffffff;
     padding: 20px;
-    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
 form {
-    margin-bottom: 20px;
+    max-width: 400px;
+    margin: 0 auto;
 }
-
-label {
-    display: block;
-    margin-bottom: 5px;
+#Postlink{
+    color: rgb(16, 16, 16);
+    background-color: rgb(144, 245, 245);
+    border: 0px;
+    padding: 7px;
+    border-radius: 4px;
 }
-
-input, button, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+#PostDesc{
+    color: rgb(16, 16, 16);
+    background-color: rgb(144, 245, 245);
+    border: 0px;
+    padding: 7px;
+    border-radius: 4px;
 }
-
-button {
-    background-color: #3498db;
-    color: #fff;
-    cursor: pointer;
+#Post{
+    border: 0px;
+    padding: 5px;
+    border-radius: 3px;
 }
-
-button:hover {
-    background-color: #2980b9;
+#Post:hover{
+    background-color: #eb9d16;
 }
 
 #Post_view_box {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.post-box {
-    width: 48%;
-    margin: 0 10px 20px 10px;
-    box-sizing: border-box;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.post-box img {
-    max-width: 100%;
-    height: auto;
-}
-
-.comment-icon {
-    font-size: 18px;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    display: none;
-}
-
-button.save-comment {
-    display: none;
-    background-color: #2ecc71;
-    color: #fff;
-}
-
-button.save-comment:hover {
-    background-color: #27ae60;
+h2 {
+    margin-top: 30px;
 }
