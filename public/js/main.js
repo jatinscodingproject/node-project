@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    console.log(1)
     var form = document.getElementById('form');
     var postViewBox = document.getElementById('Post_view_box');
     form.addEventListener('submit', refresh);
@@ -37,12 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     async function refresh(event) {
+        console.log(2)
         event.preventDefault();
         const postlink = document.querySelector('#Postlink').value;
         const postdesc = document.querySelector('#PostDesc').value;
+        console.log(3)
         try {
             const response = await axios.post('http://localhost:3000/post',{postlink,postdesc});
-            showOutput(response.data.imageUrl, response.data.description);
+            console.log(4)
         } catch (err) {
             console.log(err);
         }
