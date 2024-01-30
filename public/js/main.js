@@ -40,12 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         const postlink = document.querySelector('#Postlink').value;
         const postdesc = document.querySelector('#PostDesc').value;
-        const formData = {postlink,postdesc};
-        console.log(formData)
         try {
-            const response = fetch('http://localhost:3000/post',{method:'POST',header:{'Content-Type': 'application/json' },body:JSON.stringify(formData)})
-            //const response = await axios.post('http://localhost:3000/post',{postlink,postdesc});
-            //showOutput(response.data.imageUrl, response.data.description);
+            const response = await axios.post('http://localhost:3000/post',{postlink,postdesc});
+            showOutput(response.data.imageUrl, response.data.description);
         } catch (err) {
             console.log(err);
         }

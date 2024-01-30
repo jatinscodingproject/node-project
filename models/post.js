@@ -11,11 +11,9 @@ const Post = sequelize.define('Post',{
     },
     Postlink:{
         type:Sequelize.STRING,
-        allowNull:false
     },
     PostDesc:{
         type:Sequelize.STRING,
-        allowNull:false
     }
 });
 
