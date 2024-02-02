@@ -2,17 +2,21 @@ const express = require('express');
 
 const app = express();
 
+const cors = require('cors');
+
 const bodyParser = require('body-parser');
 
 const Sequelize = require('./utils/database');
 
-const postRoutes = require('./routes/post')
+const postRoutes = require('./routes/post');
+
+app.use(cors())
 
 app.use(express.static('public'));
 
-app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 
-app.use(postRoutes)
+app.use(postRoutes);
 
 Sequelize
     .sync()
