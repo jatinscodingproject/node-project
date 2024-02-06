@@ -9,6 +9,7 @@
   "author": "Jatin dixit",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.7",
     "body-parser": "^1.20.2",
     "circular-json": "^0.5.9",
     "cors": "^2.8.5",

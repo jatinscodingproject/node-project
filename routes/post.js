@@ -1,13 +1,11 @@
-const express = require('express');
+const express = require("express");
+const router = express.Router();
+const postController = require("../controllers/post");
 
-const router = express.Router()
+router.get("/posts", postController.getPosts);
 
-const postController = require('../controllers/post');
+router.post("/addPost", postController.addPost);
 
-router.get('/post',postController.getPost);
-
-router.post('/post',postController.postDetails)
-
-router.get('/post/data',postController.getPostData)
+router.post("/addComment", postController.addComment);
 
 module.exports = router;

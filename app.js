@@ -1,33 +1,19 @@
-const express = require('express');
-
+const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
+const sequelize = require("./utils/database");
+const cors = require("cors");
+const postRoutes = require("./routes/post");
+app.use(cors());
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-const cors = require('cors');
+app.use("/get", postRoutes);
+// app.use("/post", postRoutes);
 
-const bodyParser = require('body-parser');
-
-const Sequelize = require('./utils/database');
-
-const postRoutes = require('./routes/post');
-
-app.use(cors())
-
-app.use(express.static('public'));
-
-app.use(express.urlencoded({extended:true}))
-
-app.use(postRoutes);
-
-Sequelize
-    .sync()
-    .then(res => {
-        app.listen(5000)
-        console.log('table created successfull')
-    })
-    .catch(err => {
-        console.log(err)
-    })
-
-
-
-
+sequelize
+  .sync()
+  .then((result) => {
+    app.listen(4000);
+  })
+  .catch((err) => console.log(err));
