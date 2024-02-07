@@ -48,7 +48,7 @@ async function addPost(e) {
 async function renderList() {
   try {
     const posts = await axios.get("http://localhost:4000/get/posts");
-
+    console.log(posts)
     posts.data.forEach((post) => {
       var li = document.createElement("li");
       var commentBox = document.createElement("input");

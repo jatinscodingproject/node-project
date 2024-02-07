@@ -1,9 +1,5 @@
 const path = require("path");
-const { posts, comments } = require("../models/post");
-
-// exports.getHomePage = (req, res, next) => {
-//   res.sendFile(path.join(__dirname, "../", "public", "views", "index.html"));
-// };
+const {posts, comments } = require("../models/post");
 
 exports.addPost = (req, res, next) => {
   console.log(req.body);
@@ -29,7 +25,6 @@ exports.getPosts = (req, res, next) => {
     .findAll({ include: comments })
     .then((posts) => {
       res.json(posts);
-      // console.log(users);
     })
     .catch((err) => console.log(err));
 };

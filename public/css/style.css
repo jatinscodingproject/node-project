@@ -1,66 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 body {
-    font-family: cursive;
-    background-color: #dbfba2;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
 }
-
-.container {
-    text-align: center;
-}
-
-.heading {
-    color: #343a40;
-}
-label {
-    color: #343a40;
-    font-weight: bolder;
-}
-
-#posting {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-}
-
-#form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-#Postlink{
-    color: rgb(16, 16, 16);
-    background-color: rgb(144, 245, 245);
-    border: 0px;
-    padding: 7px;
-    border-radius: 4px;
-}
-#PostDesc{
-    color: rgb(16, 16, 16);
-    background-color: rgb(144, 245, 245);
-    border: 0px;
-    padding: 7px;
-    border-radius: 4px;
-}
-#Post{
-    border: 0px;
-    padding: 5px;
-    border-radius: 3px;
-}
-#Post:hover{
-    background-color: #eb9d16;
-}
-
-#Post_view_box {
-    margin-top: 30px;
+#container{
+    background-color: black;
+    color: white;
+    height: 200px;
+    width: 300px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
-h2 {
-    margin-top: 30px;
-}
+
+
